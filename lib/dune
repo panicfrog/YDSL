@@ -1,0 +1,3 @@
+(library
+ (name ydsl)
+ (libraries base menhirLib))

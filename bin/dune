@@ -1,0 +1,4 @@
+(executable
+ (public_name ydsl_cli)
+ (name main)
+ (libraries ydsl))
