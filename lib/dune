@@ -1,3 +1,6 @@
+(ocamllex lexer)
+
 (library
  (name ydsl)
- (libraries base menhirLib))
+ (modules lexer token)
+ (libraries base))

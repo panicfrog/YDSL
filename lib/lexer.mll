@@ -1,7 +1,14 @@
 (* ocamllex token *)
+{
+    (* open Lexing *)
+    open Token
+}
 
-rule token = parse
-    | [' ' '\t' '\n'] { token lexbuf } (* Skip whitespace *)
+let whitespace = [' ' '\t']+
+
+rule token = 
+    parse
+    | whitespace { token lexbuf } (* Skip whitespace *)
 
     | "Text"      { Text }
     | "Button"    { Button }
